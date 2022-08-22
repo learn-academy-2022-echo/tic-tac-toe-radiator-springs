@@ -1,5 +1,15 @@
 .square {
   height: 100px;
-  width: 100px;
+  width: 110px;
   border: 2px solid black;
+  display: flex;
+  background-color: pink;
+  
+ }
+
+.board{
+  width: 350px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
 }
