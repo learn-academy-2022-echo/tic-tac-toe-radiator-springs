@@ -1,11 +1,14 @@
 import React from 'react'
 
 const Square = (props) => {
-  const squareClick = (props) => {
-    props.clickPlay(props.index)
+  const handleClick = () => {
+    props.handleClickPlay(props.index)
   }
   return (
-    <div className="square" onClick={squareClick}>{props.value}</div>
+    <>
+    <div className="square" 
+    onClick={() => handleClick()}>{props.value}</div>
+    </>
   )
 }
 export default Square
